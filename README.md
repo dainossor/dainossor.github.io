@@ -5,5 +5,5 @@ This repository contains my portfolio website.
 ## Features
 
 - [X] About me
-- [ ] Contact information
+- [X] Contact information
 - [ ] Projects
