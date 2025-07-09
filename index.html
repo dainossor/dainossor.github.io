@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="The portfolio of Denis Cvijanović, an aspiring front-end developer from Zagreb, Croatia.">
-        <link type="image/png" sizes="16x16" rel="icon" href="./favicon.png">
+        <link type="image/png" sizes="16x16" rel="icon" href="../media/favicon.png">
         <style>
             body {
                 background-color: paleturquoise;
@@ -33,6 +33,13 @@
             }
             ul {
                 list-style-type: none;
+            }
+            .input {
+                width: 100%;
+                border-radius: 0;
+                border: none;
+                background-color: darkseagreen;
+                color: black;
             }
             </style>
     </head>
@@ -65,11 +72,11 @@
                 <h3>Projects</h3>
                     <ul>
                         <li>
-                            <div><img src="./compSite.jpg" alt="Screenshot of a Company Website"></div>
+                            <div><img src="../media/compSite.jpg" alt="Screenshot of a Company Website"></div>
                             <a href="https://dainossor.github.io/algebraSearch/companyWebsite.html">Company Website</a>
                         </li>
                         <li>
-                            <div><img src="./searchNG.jpg" alt="Screenshot of a Search Engine"></div>
+                            <div><img src="../media/searchNG.jpg" alt="Screenshot of a Search Engine"></div>
                             <a href="https://dainossor.github.io/algebraSearch/searchEngine.html">Search Engine</a>
                         </li>
                     </ul>
@@ -87,28 +94,28 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="price-list-hour">
                             <td><b>Hour</b></td>
                             <td>15</td>
                             <td>20</td>
                             <td>25</td>
                             <td>30</td>
                         </tr>
-                        <tr>
+                        <tr class="price-list-day">
                             <td><b>Day</b></td>
                             <td>100</td>
                             <td>125</td>
                             <td>150</td>
                             <td>175</td>
                         </tr>
-                        <tr>
+                        <tr class="price-list-week">
                             <td><b>Week</b></td>
                             <td>500</td>
                             <td>550</td>
                             <td>600</td>
                             <td>650</td>
                         </tr>
-                        <tr>
+                        <tr class="price-list-month">
                             <td><b>Month</b></td>
                             <td>2000</td>
                             <td>2125</td>
@@ -118,6 +125,78 @@
                     </tbody>
                 </table>
             </section>
+            <section>
+                <h2>Request a quote for your project</h2>
+                <form>
+                    <div>
+                        <label for="name">Your first and last name:</label>
+                        <input class="input" type="text" id="name" name="full_name">
+                    </div>
+                    <div>
+                        <label for="name">Your title:</label>
+                        <select class="input">
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit">Send request</button>
+                    </div>
+                </form>
+            </section>
+            <section>
+                <h2>Query request</h2>
+                <form>
+                    <div>
+                        <label for="name">Your name:</label>
+                        <input class="input" type="text" id="name" name="full_name">
+                    </div>
+                    <div>
+                        <label for="name">Your title:</label>
+                        <select class="input">
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="sir">Sir</option>
+                            <option value="madam">Madam</option>
+                        </select>
+                    </div>
+                    <div>
+                        <italic><h3>Contact me:</h3></italic>
+                        <a href="https://mail.google.com/">myEmail@mail.com</a>
+                    </div>
+                </form>
+            </section>
+            <section>
+                <h2>Project desription</h2>
+                <form>
+                    <div>
+                        <p><b>Budget</b></p>
+                        <table border="1">
+                            <caption><i><strong>Budget expectation</strong></i></caption>
+                            <thead>
+                                <tr>
+                                    <th>Small projects</th>
+                                    <th>Medium projects</th>
+                                    <th>Big projects</th>
+                                </tr>
+                                <tr>
+                                    <td>&lt;10k&euro;</td>
+                                    <td>10k-100k&euro;</td>
+                                    <td>&gt;100k&euro;</td>
+                                </tr>
+                            </thead>
+                        </table>   
+                    </div>
+                </form>
+            </section>
+            <section>
+                <p><b>Service</b></p>
+                <input type="radio" id="design" name="service" value="design">
+                <label for="design">Design</label>
+                <input type="radio" id="development" name="service" value="development">
+                <label for="development">Development</label>
+            </section>
+            <section></section>
         </main>
         <footer class="wrapper">
             <p>&copy;Denis Cvijanović</p>
